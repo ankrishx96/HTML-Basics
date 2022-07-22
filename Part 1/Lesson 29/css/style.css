@@ -1,0 +1,15 @@
+/* Select direct child of Paragraph */
+
+/* #products > p{
+    color: gold;
+} */
+
+
+/* Select direct child of Paragraph */
+
+#products+p{
+    color: gold;
+}
+
+
+

@@ -1,0 +1,37 @@
+body{
+    margin :10px;
+}
+
+.product{
+
+}
+
+/* Target only whose target is _blank  */
+a[target="_blank"] {
+
+}
+
+/* Target only if link is exact */
+a[href="https://google.com"]{
+
+}
+
+/* target urls with href containing google */
+a[href*="google"] {
+
+}
+
+/* target urls with href start with https */
+a[href^="google"] {
+    
+}
+
+/* target urls with href end with .com */
+a[href$=".com"] {
+    
+}
+
+/* We can also combine above 2 css selector */
+a[href^="google"] [href$=".com"] {
+    
+}

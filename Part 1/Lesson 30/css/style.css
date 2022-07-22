@@ -1,0 +1,42 @@
+/* Target Direct Child */
+article :first-child{
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+/* Target Type that are first of their own type*/
+article :first-of-type{
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+/* Target Type that are last of p type*/
+article p:last-of-type{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* odd | even | 3n */
+ul li:nth-child(odd){ 
+    color: dodgerblue;
+}
+
+a:visited{
+    color: brown;
+}
+
+a:active{
+    color: aqua;
+}
+
+a:link{
+    color:chartreuse
+}
+
+a:hover{
+    color: gold;
+}
+
+a:focus{
+    color: gold;
+}

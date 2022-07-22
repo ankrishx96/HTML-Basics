@@ -1,0 +1,16 @@
+p::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.line::first-line{
+    color: dodgerblue;
+}
+
+::selection{
+    background-color: cornflowerblue;
+}
+
+.before::before{
+    content: "Hey";
+}
