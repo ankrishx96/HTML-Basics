@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning</title>
+    <style>
+      body {
+        height: 200vh;
+      }
+      nav {
+        width: 100vw;
+        height: 3rem;
+        background-color: darkorange;
+        position: fixed;
+      }
+
+      .boxes {
+        border: 3px solid dodgerblue;
+        position: relative;
+      }
+
+      .box {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .box-one {
+        background-color: gold;
+      }
+      .box-two {
+        background-color: palevioletred;
+      }
+
+      /* .rel {
+        position: relative;
+        bottom: 2rem;
+        left: 3rem;
+        z-index: -1;
+      } */
+
+      .abs {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      .box-three {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <div class="boxes">
+      <div class="box box-one"></div>
+      <div class="box box-two rel abs"></div>
+      <div class="box box-three"></div>
+    </div>
+  </body>
+</html>

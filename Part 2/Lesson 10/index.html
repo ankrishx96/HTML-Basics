@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floating Elements</title>
+    <style>
+      .tweet {
+        width: 80vw;
+        background-color: dodgerblue;
+        margin: 0 auto;
+      }
+
+      /* ClearFix */
+      .tweet::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .avatar {
+        width: 5rem;
+        height: 5rem;
+        background-color: gold;
+        float: left;
+        margin-right: 0.5rem;
+      }
+
+      /* .clear {
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <article class="tweet">
+      <div class="avatar"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <!-- <p class="clear">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+        libero, earum dicta itaque doloribus debitis ab laboriosam possimus
+        minus odio delectus ipsum eos quidem sit quos sint eaque eum inventore
+        natus ex nostrum. Accusantium consectetur harum, reiciendis beatae vero
+        eaque quidem pariatur ex labore fugiat dolor vitae sunt, saepe animi!
+        Aspernatur deleniti atque voluptatem vitae, ipsa alias laboriosam.
+        Officia quia vel vitae, ducimus doloribus distinctio deserunt earum
+        expedita fugiat impedit enim soluta aliquid ex consectetur odit quasi
+        quam explicabo dolorum sunt harum consequatur possimus! Dolor magni
+        debitis in porro. Facere distinctio nostrum delectus fugiat quos
+        exercitationem voluptas velit ratione similique voluptate molestiae quis
+        dicta maxime reprehenderit in laudantium ducimus, molestias laborum
+        atque veniam libero neque accusamus recusandae aperiam? Illo mollitia
+        porro quod id eaque dolorem eius fuga itaque at! Assumenda
+        exercitationem cum nulla qui quia maxime ea. Earum esse eius nostrum
+        aliquid quisquam cum iure, nihil inventore rerum pariatur aperiam.
+      </p> -->
+      <!-- <div class="clear"></div> -->
+    </article>
+  </body>
+</html>

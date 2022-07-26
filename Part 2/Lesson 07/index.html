@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing Elements</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+      }
+
+      .box-border {
+        background-color: dodgerblue;
+        border: 10px solid greenyellow;
+      }
+
+      .box-border::after {
+        content: "Hey Im Border Box";
+      }
+
+      .box-content {
+        background-color: dodgerblue;
+        border: 10px solid greenyellow;
+        box-sizing: content-box; /* By Default it is content box */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box-border"></div>
+    <div class="box box-content"></div>
+  </body>
+</html>

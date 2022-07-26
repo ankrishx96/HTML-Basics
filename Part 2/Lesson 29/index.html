@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sprites</title>
+    <style>
+      .bg-apple_mail {
+        width: 344px;
+        height: 344px;
+        background: url("images/css_sprites.png") -10px -10px;
+        display: inline-block;
+      }
+
+      .bg-apple_music {
+        width: 344px;
+        height: 344px;
+        background: url("images/css_sprites.png") -374px -10px;
+        display: inline-block;
+      }
+
+      .bg-mac_os {
+        width: 344px;
+        height: 344px;
+        background: url("images/css_sprites.png") -10px -374px;
+        display: inline-block;
+      }
+
+      .bg-play_station {
+        width: 344px;
+        height: 344px;
+        background: url("images/css_sprites.png") -374px -374px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/apple-mail.png" alt="" />
+    <img src="images/apple-music.png" alt="" />
+    <img src="images/mac-os.png" alt="" />
+    <img src="images/play-station.png" alt="" />
+
+    <hr />
+
+    <i class="bg-apple_mail"></i>
+    <i class="bg-apple_music"></i>
+    <i class="bg-mac_os"></i>
+    <i class="bg-play_station"></i>
+  </body>
+</html>
