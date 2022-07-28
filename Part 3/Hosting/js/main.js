@@ -4,3 +4,6 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible__expanded");
   })
 );
+
+
+  AOS.init();
