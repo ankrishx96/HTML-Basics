@@ -155,6 +155,7 @@ a {
 @media screen and (min-width: 1024px) {
   .list--tick .list__item {
     padding-left: 0;
+    font-size: 1.9rem;
   }
 }
 
@@ -328,13 +329,13 @@ a {
   color: #fff;
 }
 
-/* .card--primary .badge--primary {
+.card--primary .badge--primary {
   background: #126de4;
 }
 
 .card--secondary .badge--secondary {
   background: #02cdf1;
-} */
+}
 
 /* Plans */
 
@@ -771,4 +772,15 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
     font-size: 1.5rem;
   }
+}
+
+/* Blocks */
+
+.block-plans .grid {
+  gap: 4rem;
+}
+
+.block-plans .card {
+  max-width: 450px;
+  margin: 0 auto;
 }
