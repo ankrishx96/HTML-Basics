@@ -1,0 +1,53 @@
+.font {
+  font-family: Arial, Helvetica, sans-serif; /* Change font family */
+
+  font-style: italic; /* Use to style text. Default value is normal. Values can be normal | italic */
+
+  font-weight: 100; /* Bold text based on value or propety attribute. Values can be 500 | bold | etc */
+
+  font-size: 10rem; /* Change text size to small or large. Values can be absolute | relative */
+}
+
+.text {
+  color: black; /* Change Text color */
+
+  text-transform: lowercase; /* Change text to uppercase, lowercase. Values can be capitalize | lowercase | uppercase */
+
+  text-align: left; /* Change alignment of text inside block. Default value is left. Values can be left | right | center | justify */
+
+  text-decoration: underline; /* Use to Decorate text. Values can be dashed | dotted | double | line-through*/
+
+  text-shadow: 1px 2px 10px #111; /* Use to put shadows on text */ /* x-axis y-axis blur color */
+
+  text-indent: 2rem; /* Use to indent the first line of text block. Values can be in relative | absolute units */
+
+  letter-spacing: 2px; /* Add space between the characters. Values can be in relative | absolute units */
+
+  word-spacing: 2px; /* Add space between words. Values can be in relative | absolute units */
+
+  line-height: 2rem; /* Add space between lines. Values can be in relative | absolute units */
+}
+
+.background {
+  background-color: aliceblue; /* Change color of background */
+
+  background: aliceblue; /* Change color of background */
+
+  background-image: url("..."); /* add image as background */
+
+  background-repeat: no-repeat; /* Used to add or remove repeat the background image both horizontally and vertically */
+
+  background-position: 10px 10px; /* Use to set background position in DOM */
+
+  background-size: cover; /* Cover the entire image with respect to viewport */
+
+  background-attachment: fixed; /* Specify attachment of the background image with respect to its container */
+}
+
+.border {
+  border: 1px solid #111; /* Set border of 1px with color of #fff */
+
+  border-style: dotted; /* Specify the border style */
+
+  border-radius: 10px; /* Use to make edges rounder */
+}
