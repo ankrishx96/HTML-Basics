@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data List</title>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        margin: 0.5rem 0;
+      }
+      div {
+        margin: 0.2rem;
+        padding: 0.2rem;
+      }
+
+      section {
+        border: 1px solid black;
+        padding: 1rem 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-weight: bold;
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Data List / Suggestion List</h2>
+      <hr />
+
+      <!-- DataList / Suggestion List -->
+      <section>
+        <label for="suggest">Countries: </label>
+        <input
+          type="text"
+          id="suggest"
+          placeholder="Type for Suggestion"
+          list="countries"
+        />
+        <datalist id="countries">
+          <option value="USA"></option>
+          <option value="United Kingdom"></option>
+          <option value="France"></option>
+          <option value="Norway"></option>
+          <option value="Germany"></option>
+          <option value="Australia"></option>
+          <option value="India"></option>
+          <option value="Iraq"></option>
+          <option value="Dubai"></option>
+          <option value="Greenland"></option>
+          <option value="Canada"></option>
+        </datalist>
+
+        <p>Attributes:</p>
+        <span>list="datalistId"</span>
+      </section>
+    </div>
+
+    <div>
+      <h2>Dropdown List</h2>
+      <hr />
+
+      <!-- Dropdown / Suggestion List -->
+      <section>
+        <label for="dropdown">Countries: </label>
+
+        <select id="dropdown">
+          <option value="USA">USA</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="France">France</option>
+          <option value="Norway">Norway</option>
+          <option value="Germany">Germany</option>
+          <option value="Australia">Australia</option>
+          <option value="India">India</option>
+          <option value="Iraq">Iraq</option>
+          <option value="Dubai">Dubai</option>
+          <option value="Greenland">Greenland</option>
+          <option value="Canada">Canada</option>
+        </select>
+
+        <p>Attributes:</p>
+        <span>autofocus</span><br />
+        <span>disabled</span><br />
+        <span>multiple</span><br />
+        <span>required</span><br />
+        <span>selected</span>
+
+        <hr />
+
+        <p>With OptionGroup</p>
+        <select id="optdropdown">
+          <optgroup label="Courses">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="React">React</option>
+          </optgroup>
+          <optgroup label="location">
+            <option value="Delhi">Delhi</option>
+            <option value="Indore">Indore</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+          </optgroup>
+        </select>
+        <p>Attributes:</p>
+        <span>label</span>
+      </section>
+    </div>
+  </body>
+</html>
