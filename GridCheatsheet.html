@@ -43,7 +43,6 @@
         /* Grid Box Alignment */
         justify-content: center; /* Align grid box to the position based on main axis. Default value is normal. Values can be start | center | end | stretch  */
         align-content: center; /* Align grid box to the position based on cross axis. Default value is normal. Values can be start | center | end | stretch  */
-        flex-wrap: wrap; /* Set wrapping. Default value is nowrap. Values can be nowrap | wrap | wrap-reverse */
 
 
         /* Alignment Inside Grid */
@@ -75,6 +74,12 @@
       .item-4{
         grid-area: 3 / 2 / 4 / 3;
       }
+
+      /* Some Additional Property to stop overflowing items inside grid box */
+      
+      /*  grid-auto-rows: 100px; /* It will create a new row with height of 100px if overflow */
+      /*  grid-auto-columns: 100px; /* It will create a new column with widht of 100px if overflow */
+      /*  grid-auto-flow: column | row; /* Specify Direction of auto flow elements inside grid */
 
 
     </style>
