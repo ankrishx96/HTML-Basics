@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Cheatsheet</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background: springgreen;
+        height: 100vh;
+        padding: 1rem;
+      }
+      .item {
+        width: 5rem;
+        height: 5rem;
+        background: gold;
+        margin: 0.1rem;
+      }
+
+      /* Flex Box Cheatsheet */
+
+      .flex {
+        display: flex; /* Initialize Flex on Parent. Values can be flex | inline-flex */
+        flex-direction: row; /* Set direction of flex. Default value is row. Values can be column | column-reverse | row | row-reverse */
+        justify-content: center; /* Align content to the position based on main axis. Default value is flex-start. Values can be flex-start | flex-end | center | space-between | space-around | space-evenly */
+        align-items: center; /* Align content to the position based on cross axis. Default value is flex-start. Values can be flex-start | flex-end | center | space-between | space-around | space-evenly */
+        align-content: center; /* Align muliple rows / columns to the position based on cross axis. Default value is flex-start. Values can be flex-start | flex-end | center | space-between | space-around | space-evenly */
+        flex-wrap: wrap; /* Set wrapping. Default value is nowrap. Values can be nowrap | wrap | wrap-reverse */
+
+        /* flex-flow : row wrap; -> Shorthand property to set direction & wrap */
+      }
+
+      .item {
+        flex-grow: 1; /* Item take up all the available space inside a flex container. Default value is 0. Values can be 0 | 1 */
+        flex-shrink: 1; /* Shrink the item inside a flex container. Default value is 1. Values can be 0 | 1 */
+      }
+
+      .item2 {
+        flex-basis: 50%; /* Item take up all the mentioned space inside a flex container */
+        order: 0; /* Set the order of item that are inside the flex box. Default value is 0. Values can be -1 | 0 | 1 */
+      }
+
+      .item6 {
+        align-self: flex-end; /* Align specific child to the position based on cross axis. Default value is flex-start. Values can be flex-start | flex-end | center | space-between | space-around | space-evenly */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex box">
+      <div class="item">1</div>
+      <div class="item item2">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item item6">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item item6">12</div>
+    </div>
+  </body>
+</html>
